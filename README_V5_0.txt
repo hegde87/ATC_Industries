@@ -1,0 +1,1 @@
+V5.0 changes: contact heading CONTACT US; replace unrelated hose and blank placeholder in Cutting and High Frequency Welding gallery with machine-hf-1.jpg and machine-hf-2.jpg. All other pages retained.

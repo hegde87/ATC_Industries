@@ -1,0 +1,82 @@
+[
+  {
+    "id": "water-inlet-hose",
+    "title": "Water inlet hose assemblies",
+    "category": "Home appliances",
+    "group": "appliances",
+    "image": "image10.webp",
+    "alt": "Washing machine water inlet hose assemblies",
+    "description": "Hose assemblies for washing machine water supply connections.",
+    "source": "Presentation slide 15"
+  },
+  {
+    "id": "water-exhaust-hose",
+    "title": "Water exhaust hoses",
+    "category": "Home appliances",
+    "group": "appliances",
+    "image": "image11.webp",
+    "alt": "Washing machine water exhaust hoses",
+    "description": "Flexible corrugated hoses for washing machine drainage applications.",
+    "source": "Presentation slide 16"
+  },
+  {
+    "id": "pe-eva-outlet-hose",
+    "title": "PE / EVA outlet hoses",
+    "category": "Home appliances",
+    "group": "appliances",
+    "image": "image12.webp",
+    "alt": "PE/EVA water outlet hose",
+    "description": "Water outlet hose assembly used in top-loading washing machines.",
+    "source": "Presentation slide 17"
+  },
+  {
+    "id": "blow-moulded-bellows",
+    "title": "Blow-moulded bellows",
+    "category": "Home appliances",
+    "group": "appliances",
+    "image": "image13.webp",
+    "alt": "Blow-moulded washing machine bellows",
+    "description": "Bellows for top-loading washing machine applications.",
+    "source": "Presentation slide 18"
+  },
+  {
+    "id": "extruded-profiles",
+    "title": "Extruded and fabricated profiles",
+    "category": "Profiles and components",
+    "group": "industrial",
+    "image": "image14.webp",
+    "alt": "Extruded polymer profiles",
+    "description": "Extruded and fabricated polymer profiles for appliance and industrial uses.",
+    "source": "Presentation slide 19"
+  },
+  {
+    "id": "thermoformed-rear-cover",
+    "title": "Thermoformed rear covers",
+    "category": "Home appliances",
+    "group": "appliances",
+    "image": "image15.webp",
+    "alt": "Thermoformed washing machine rear cover",
+    "description": "Thermoformed rear cover for top-loading washing machines.",
+    "source": "Presentation slide 20"
+  },
+  {
+    "id": "precision-moulded-parts",
+    "title": "Precision moulded parts and fasteners",
+    "category": "Components",
+    "group": "industrial",
+    "image": "image16.webp",
+    "alt": "Precision moulded plastic components",
+    "description": "Insert-moulded tubes, gaskets and precision moulded fasteners.",
+    "source": "Presentation slide 21"
+  },
+  {
+    "id": "ac-drain-assembly",
+    "title": "Split AC drain pipe assemblies",
+    "category": "Air conditioning",
+    "group": "appliances",
+    "image": "image17.webp",
+    "alt": "Split AC indoor drain pipe assembly",
+    "description": "Drain pipe assemblies for split air-conditioning units.",
+    "source": "Presentation slide 22"
+  }
+]
