@@ -1,0 +1,23 @@
+{
+  "project": "ATC Industries",
+  "entries": [
+    {
+      "date": "2026-10-20",
+      "mode": "redesign",
+      "scope": "all pages",
+      "picks": {
+        "audience": "OEM procurement and engineering buyers",
+        "primary_action": "request a quote",
+        "tone": "technical / utilitarian",
+        "genre": "modern-minimal, industrial register",
+        "theme": "custom, anchored on brand teal oklch(60% 0.105 194)",
+        "macrostructures": ["Split Studio (marketing)", "Workbench spec (process pages)", "Index-first (capabilities)"],
+        "nav": "N12 banner + mega menu",
+        "footer": "Ft5 statement + site index",
+        "fonts": {"display": "Space Grotesk", "body": "IBM Plex Sans", "outlier": "IBM Plex Mono"}
+      },
+      "kept_by_request": ["orange extrusion hero (V6.4)", "hexagon reasons on Why ATC"],
+      "notes": "Picks inferred because the client asked for an autonomous review. System locked in design.md."
+    }
+  ]
+}

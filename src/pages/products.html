@@ -1,0 +1,63 @@
+---
+title: Plastic Components & Products | ATC Industries
+description: Washing-machine hoses, bellows, rear covers, extruded profiles, precision molded parts, AC drain assemblies and telecom radomes manufactured for OEMs by ATC Industries.
+nav: products
+crumbs: Products
+---
+<section class="page-hero page-hero--compact">
+  <div class="container">
+    {CRUMBS}
+    <h1 class="page-hero__title">Components engineered for real-world applications.</h1>
+    <p class="page-hero__lede">Representative components we manufacture for OEMs. Choose a product to see details and request a quotation for your specification.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="catalogue-title">
+  <div class="container" data-filterable>
+    <h2 class="visually-hidden" id="catalogue-title">Product catalogue</h2>
+    <div class="filter">
+      <div class="chips" role="group" aria-label="Filter by category">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All products</button>
+        <button class="chip" type="button" data-filter="appliances" aria-pressed="false">Home appliances &amp; AC</button>
+        <button class="chip" type="button" data-filter="industrial" aria-pressed="false">Profiles &amp; components</button>
+      </div>
+      <label class="search"><span class="visually-hidden">Search products</span>{{ icon search }}<input type="search" placeholder="Search products" data-product-search autocomplete="off"></label>
+      <p class="filter__count" data-product-count aria-live="polite"></p>
+    </div>
+    {{ product_cards }}
+    <p class="empty" data-product-empty hidden>No matching products. Try another search, or <a class="text-link" href="contact.html">ask us directly</a> — we manufacture to specification.</p>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="telecom-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title" id="telecom-title">Telecom and thermoformed products.</h2>
+      <p class="section-head__lede">Fabric and thermoformed radomes, polycarbonate base station radomes and thermoformed EPS pallets.</p>
+    </div>
+    <div class="gallery gallery--3">
+      {{ figure "radome-fabric.jpg" caption="4 ft fabric radome for microwave antennas" group=telecom }}
+      {{ figure "radome-thermoformed.jpg" caption="Thermoformed radome in 2, 3, 4 and 6 ft diameters" group=telecom fit=contain }}
+      {{ figure "Thermoforming Products Infographic.png" caption="Polycarbonate base station radomes and PET trays" group=telecom fit=contain }}
+      {{ figure "image44.webp" caption="Radome-covered antennas in service" group=telecom }}
+      {{ figure "eps-pallet-single.png" caption="Thermoformed EPS pallet with HIPS sheet" group=telecom fit=contain }}
+      {{ figure "eps-pallet-stack.jpg" caption="Stacked thermoformed EPS pallets" group=telecom fit=contain }}
+    </div>
+    <div class="actions">{{ btn "contact.html?interest=Telecom%20radomes" "Enquire about radomes" variant=secondary }}</div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="custom-title">
+  <div class="container split">
+    <div class="split__copy">
+      <div class="section-head">
+        <h2 class="section-head__title" id="custom-title">Looking for a custom vacuum-formed part?</h2>
+        <p class="section-head__lede">Protective trays, formed component packaging and large formed panels — subject to technical evaluation.</p>
+      </div>
+      <div class="actions">{{ btn thermoforming-vacuum-forming.html "Explore thermoforming" }}</div>
+    </div>
+    <div class="split__media">{{ img "Molded Black Industrial Panel Cover.png" alt="Black formed industrial panel cover" sizes="(min-width: 60rem) 46vw, 100vw" cls=img-contain }}</div>
+  </div>
+</section>
+
+{{ cta_band title="Don’t see your component?" text="We manufacture to customer drawings and specifications. Share yours and we’ll review the right process and material." }}
