@@ -1,0 +1,1 @@
+ATC Industries V8.6: adds approved professional portrait of Priyal Hegde, Partner, to leadership.html. Keeps Amrish Shah, Director, and all other V8.5 pages. Run START_WEBSITE.bat or python -m http.server 8000 from this folder.

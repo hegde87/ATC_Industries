@@ -1,0 +1,1 @@
+V8.4: Contact page banner and contact section use factory/solar image only. About page machine banner uses a pre-blurred image plus dark overlay. All other content retained. Run python -m http.server 8000 inside this folder.
