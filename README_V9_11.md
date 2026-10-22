@@ -1,0 +1,1 @@
+V9.11: Injection Molding, Extrusion, and Thermoforming capability banner artwork is now displayed in full at its natural aspect ratio. Headings are in a dark section directly beneath the artwork to prevent obscuring image details. Other pages unchanged.

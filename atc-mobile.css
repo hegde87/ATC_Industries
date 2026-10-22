@@ -1,0 +1,66 @@
+/* ATC Industries V8.8 - Mobile-first refinements; desktop identity unchanged */
+html{scroll-padding-top:86px}body{overflow-x:hidden}img,video,svg{max-width:100%}img{height:auto}main,section,.wrap{min-width:0}
+:focus-visible{outline:3px solid #00aeb3;outline-offset:3px}
+.mobile-sub-toggle{display:none}
+@media(max-width:900px){
+ .header.v4-header{position:sticky!important;top:0!important;z-index:100!important}
+ .header.v4-header .nav{height:72px!important;min-height:72px!important;gap:12px!important}
+ .header.v4-header .brand{min-width:0;flex:1}
+ .header.v4-header .brand img.logo{width:clamp(145px,42vw,205px)!important;height:62px!important;object-fit:contain;object-position:left center}
+ .header.v4-header .menu{display:flex!important;align-items:center;justify-content:center;width:48px;height:48px;flex-shrink:0;color:#fff;background:#1a3d44;border:1px solid #54737a;border-radius:6px;font-size:25px;line-height:1;z-index:102}
+ .header.v4-header .links{display:none!important;position:absolute!important;top:72px!important;left:0!important;right:0!important;width:100%!important;max-height:calc(100dvh - 72px)!important;overflow-y:auto!important;overscroll-behavior:contain;flex-direction:column!important;align-items:stretch!important;gap:0!important;background:#0d2027!important;color:#fff!important;padding:10px 20px 24px!important;box-shadow:0 16px 25px #0005!important}
+ .header.v4-header .links.open{display:flex!important}
+ .header.v4-header .links>a,.header.v4-header .nav-group>a{display:flex!important;align-items:center;min-height:49px!important;padding:12px 6px!important;color:#fff!important;font-size:14px!important;line-height:1.4!important}
+ .header.v4-header .nav-group{position:relative;width:100%;border-bottom:1px solid #ffffff23}
+ .header.v4-header .nav-group>a{padding-right:54px!important}
+ .header.v4-header .links>a:not(.nav-cta){border-bottom:1px solid #ffffff23}
+ .header.v4-header .nav-sub{display:none!important;position:static!important;background:#16323b!important;padding:6px 10px!important;margin:0 0 8px!important;box-shadow:none!important;border:0!important}
+ .header.v4-header .nav-group.mobile-expanded>.nav-sub{display:block!important}
+ .header.v4-header .nav-sub a{display:block!important;color:#e2f2f3!important;padding:11px 12px!important;min-height:44px!important;font-size:13px!important}
+ .header.v4-header .nav-cta{display:flex!important;justify-content:center!important;margin-top:16px!important;min-height:48px!important;color:#102c31!important}
+ .mobile-sub-toggle{display:flex;position:absolute;right:0;top:3px;align-items:center;justify-content:center;width:48px;height:46px;border:0;background:#ffffff12;color:#fff;font-size:26px;border-radius:5px}
+ .mobile-sub-toggle[aria-expanded=true]{transform:none;background:#ffffff25}
+ .mobile-sub-toggle[aria-expanded=true]::first-letter{color:#b1bd35}
+ body.mobile-nav-open{overflow:hidden}
+ .section{padding-top:60px!important;padding-bottom:60px!important}
+ .wrap{padding-left:clamp(16px,4.5vw,30px)!important;padding-right:clamp(16px,4.5vw,30px)!important}
+ .split,.contactgrid,.leadership-layout,.atc-team-home-grid,.atc-quality-motion-grid{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}
+ .cards,.locations,.atc-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .hero.v4-home-hero{min-height:0!important;padding:0!important;display:flex;align-items:center}
+ .hero.v4-home-hero .wrap{padding-top:92px!important;padding-bottom:58px!important}
+ .hero.v4-home-hero h1{font-size:clamp(32px,6.8vw,55px)!important;line-height:1.12!important;overflow-wrap:break-word}
+ .hero.v4-home-hero p{font-size:clamp(15px,2.2vw,18px)!important;line-height:1.65!important}
+ .hero.v4-home-hero .actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important}
+ .hero.v4-home-hero .actions .btn{width:100%!important;max-width:none!important;justify-content:center;text-align:center;min-height:48px;padding:12px 10px;font-size:12px}
+ .hero-note{display:none}
+ .atc-slides{aspect-ratio:auto!important;height:480px!important;min-height:0!important}
+ .atc-slide-content{bottom:45px!important;max-width:85%!important}
+ .atc-slide-content h3{font-size:clamp(27px,5vw,39px)!important}
+ .atc-team-figure img,.atc-team-home-grid img{width:100%;height:auto;object-fit:contain}
+ .form{padding:clamp(18px,4vw,28px)!important}
+ .form input,.form select,.form textarea{font-size:16px!important;min-height:44px}
+ .btn,.filter button,.atc-slider-controls button{min-height:44px}
+}
+@media(max-width:600px){
+ .header.v4-header .brand img.logo{width:clamp(150px,46vw,185px)!important}
+ .hero.v4-home-hero .wrap{padding-top:85px!important;padding-bottom:44px!important}
+ .hero.v4-home-hero h1{font-size:clamp(30px,8.3vw,42px)!important;letter-spacing:-.045em!important}
+ .hero.v4-home-hero .eyebrow{font-size:10px!important;letter-spacing:.1em!important}
+ .hero.v4-home-hero .actions{grid-template-columns:1fr!important}
+ .hero.v4-home-hero .actions .btn{font-size:12px!important}
+ .cards,.locations,.atc-photo-grid,.atc-cert-showcase,.quality-cert-grid{grid-template-columns:minmax(0,1fr)!important}
+ .section{padding-top:48px!important;padding-bottom:48px!important}
+ .head h2,.atc-team-intro h2{font-size:clamp(28px,8vw,38px)!important}
+ .atc-slides{height:460px!important}
+ .atc-slide-content{left:6%!important;right:6%!important;max-width:none!important;bottom:50px!important}
+ .atc-slide-content h3{font-size:29px!important}
+ .atc-slider-controls{flex-wrap:wrap}
+ .atc-team-names{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important;text-align:center}
+ .atc-team-names span::after{display:none!important}
+ .atc-team-home-grid{gap:22px!important}
+ .footer .wrap{display:flex;flex-direction:column;gap:24px!important}
+ .page-hero.v4-banner h1,.feature-hero.v4-banner h1{font-size:clamp(31px,8vw,44px)!important;overflow-wrap:break-word}
+ .process-gallery,.atc-radome-grid{grid-template-columns:1fr!important}
+ .atc-photo img{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}

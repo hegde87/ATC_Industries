@@ -1,0 +1,1 @@
+V9.9: Mission & Vision and Quality full-width banners, matching Leadership. Mission infographic is fit edge-to-edge without cutting off text, which may slightly change its proportions on desktop. Quality uses the higher-resolution approved photo and cover placement. Other pages unchanged.

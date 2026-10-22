@@ -1,0 +1,9 @@
+/* V9.8: Consistent hero heights, preserving complete Mission/Vision artwork. */
+/* Full artwork shown inside a common desktop hero-height frame: no cropping or distortion. */
+.atc-mission-image{height:clamp(240px,25vw,340px)!important;min-height:0!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;background:#eaf6f8!important}
+.atc-mission-image img{display:block!important;width:auto!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;margin:0 auto!important}
+/* Other interior banners retain their existing content and backgrounds. */
+@media(max-width:767px){
+ .atc-mission-image{height:auto!important;min-height:0!important;display:block!important}
+ .atc-mission-image img{height:auto!important;width:100%!important;max-height:none!important;max-width:100%!important}
+}

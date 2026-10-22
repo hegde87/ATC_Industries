@@ -1,0 +1,22 @@
+
+/* ATC V9 requested updates */
+.nav-cta{display:none!important}
+.atc-contact-factory-hero{display:none!important}
+.v4-contact-intro.atc-contact-single{min-height:510px;display:flex;align-items:center;padding:90px 0!important}
+.v4-contact-intro.atc-contact-single:before{background-image:url('assets/ATC-Solar-Powered Office Building.webp')!important;background-position:center center!important;filter:none!important}
+.v4-contact-intro.atc-contact-single:after{background:linear-gradient(90deg,rgba(4,25,32,.87),rgba(4,25,32,.66))!important}
+.atc-leadership-new{background:linear-gradient(90deg,rgba(4,23,31,.85),rgba(4,23,31,.37)),url('assets/leadership-banner-approved.jpg') center/cover no-repeat!important}
+.atc-mission-image{background:#f6fbfc}.atc-mission-image img{display:block;width:100%;height:auto;max-width:2000px;margin:auto}
+.atc-customers-page{background:#f5fafb;padding:54px 0 70px}.atc-customers-page .wrap{max-width:1180px}.atc-customers-page h1{font-size:clamp(2rem,5vw,3.6rem);margin:10px 0}.atc-customers-page img{display:block;width:min(100%,1500px);height:auto;margin:35px auto 0}
+.atc-quality-new{background:linear-gradient(90deg,rgba(3,24,32,.92),rgba(3,24,32,.30)),url('assets/quality-control-equipment.jpg') center/cover no-repeat!important}
+.atc-quality-motion-frames img{display:none!important}.atc-quality-motion-frames img:first-child{display:block!important;position:relative!important;inset:auto!important;width:100%!important;height:100%!important;object-fit:cover!important;opacity:1!important;animation:none!important}
+.atc-product-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:24px}.atc-product-links a{padding:22px;border:1px solid #cce4e7;border-radius:12px;background:#fff;color:#075d68;font-weight:700;text-decoration:none}.atc-product-links a:hover{border-color:#008d93;background:#f2fbfa}
+@media(max-width:760px){.atc-product-links{grid-template-columns:1fr}.v4-contact-intro.atc-contact-single{min-height:470px;padding:60px 0!important}.atc-customers-page{padding-top:35px}.atc-customers-page img{margin-top:20px}}
+
+/* V9.1: preserve every word of the approved infographic at every viewport width. */
+.atc-mission-image{width:100%;margin:0;padding:0;background:#eaf6f8;overflow:hidden}
+.atc-mission-image img{display:block;width:100%;max-width:none;height:auto;object-fit:contain;object-position:center}
+@media(max-width:767px){.atc-mission-image{padding:0}.atc-mission-image img{width:100%;height:auto}}
+
+/* V9.2: approved leadership background; no other pages changed. */
+.page-hero.v4-banner.atc-leadership-new{background:linear-gradient(90deg,rgba(4,23,31,.68),rgba(4,23,31,.12)),url('assets/leadership-sunset-approved.png') center center/cover no-repeat!important}

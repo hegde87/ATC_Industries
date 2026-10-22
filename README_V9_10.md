@@ -1,0 +1,1 @@
+V9.10: Mission & Vision infographic aspect-ratio correction only. The original 2048 x 768 image is rendered at full width and natural 8:3 aspect ratio. No stretching or cropping. Because the full image is preserved, banner height varies with screen width and is taller than the Leadership banner on desktop. Other pages unchanged.

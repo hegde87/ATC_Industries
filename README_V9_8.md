@@ -1,0 +1,1 @@
+V9.8: Mission/Vision artwork now contained within a 240–340px desktop banner, preserving the entire original artwork without crop or stretching. Mobile keeps original proportions at full width. All other pages, images, navigation, and copy are unchanged.

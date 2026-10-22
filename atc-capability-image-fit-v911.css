@@ -1,0 +1,25 @@
+/* V9.11: show entire capability artwork without crop or stretch. */
+body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image {
+ display:block!important; min-height:0!important; height:auto!important; overflow:visible!important;
+ background:#102630!important; padding:0!important;
+}
+body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image::before {
+ content:""!important; display:block!important; position:relative!important; inset:auto!important;
+ width:100%!important; height:auto!important; aspect-ratio:var(--art-ratio)!important;
+ background-image:var(--process-image)!important; background-size:contain!important;
+ background-position:center!important; background-repeat:no-repeat!important;
+ background-color:#eef4f6!important; transform:none!important; z-index:auto!important;
+}
+body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image .process-banner-inner {
+ box-sizing:border-box!important; max-width:1100px!important; padding:24px 22px 30px!important;
+ position:relative!important; z-index:1!important;
+}
+body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image h1 {
+ font-size:clamp(27px,4.2vw,49px)!important; line-height:1.15!important;
+ margin:12px 0!important; max-width:100%!important;
+}
+body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image p {
+ font-size:clamp(14px,1.6vw,18px)!important; margin:0!important;
+}
+body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image .process-back {margin-bottom:6px!important}
+@media(max-width:600px){body:has(.atc-capability-full-image) .process-detail-banner.atc-capability-full-image .process-banner-inner{padding:18px 18px 24px!important}}

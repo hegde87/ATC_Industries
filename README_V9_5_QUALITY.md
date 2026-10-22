@@ -1,0 +1,1 @@
+ATC Industries V9.5 — Quality page update only. Approved lab workbench hero, original technician photo, inspection stages. All other pages unchanged. Run python -m http.server 8000 then open /quality.html.

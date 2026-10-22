@@ -1,0 +1,17 @@
+/* V9.6: Image visibility audit — preserve full photographs on every screen. */
+/* Do not force portrait/inspection photos into landscape masks. */
+.atc-quality-feature-v95 .atc-quality-visual{aspect-ratio:auto!important;height:auto!important;min-height:0!important;overflow:visible!important;background:transparent!important}
+.atc-quality-feature-v95 .atc-quality-motion-frames{position:static!important;inset:auto!important;height:auto!important}
+.atc-quality-feature-v95 .atc-quality-motion-frames img:first-child{position:static!important;inset:auto!important;display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;border-radius:9px}
+/* Banner photos must be fully visible, with a dark letterbox when necessary. */
+.page-hero.v4-banner,.feature-hero.v4-banner,.process-detail-banner{background-size:100% 100%,contain!important;background-position:center,center!important;background-repeat:no-repeat!important;background-color:#102630!important}
+.page-hero.quality-hero.atc-quality-v95{background-size:100% 100%,contain!important;background-position:center,center!important;background-color:#102630!important}
+/* Keep photograph proportions intact in galleries, products, leadership, and facilities. */
+.process-row-image img,.process-gallery-photo img,.atc-green-photo img,.atc-slide img,.atc-photo img,.atc-image-card img,.process-detail-photo img,.leadership-photo img,.team-photo img{object-fit:contain!important;object-position:center!important}
+.process-row-image img{background:#edf3f3}
+.process-gallery-photo img{background:#f4f7f7}
+/* Hero slides: retain whole image rather than cropping subjects at edges. */
+body:has(.v4-home-hero) .hero.v4-home-hero::before{background-size:100% 100%,contain!important;background-position:center center!important;background-color:#0c1e26!important}
+/* Preserve complete pictures on tablet/mobile. */
+@media(max-width:900px){.atc-quality-feature-v95 .atc-quality-motion-grid{align-items:start!important}.atc-quality-feature-v95 .atc-quality-visual{width:100%!important}}
+@media(max-width:600px){.page-hero.quality-hero.atc-quality-v95{background-size:100% 100%,contain!important;background-position:center,center!important}.atc-quality-feature-v95 .atc-quality-visual{aspect-ratio:auto!important}}

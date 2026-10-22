@@ -1,0 +1,54 @@
+/* V9.9: Match Leadership's edge-to-edge hero presentation. */
+/* The infographic must be entirely visible: fit it into a full-width frame, without side gutters. */
+.atc-mission-image{
+ width:100%!important;height:clamp(250px,24vw,340px)!important;
+ min-height:0!important;display:block!important;overflow:hidden!important;
+ background:#eaf6f8!important;
+}
+.atc-mission-image img{
+ display:block!important;width:100%!important;height:100%!important;
+ max-width:none!important;max-height:none!important;
+ object-fit:fill!important;object-position:center!important;margin:0!important;
+}
+/* Quality: use the full-resolution approved image edge-to-edge, as on Leadership. */
+.page-hero.v4-banner.quality-hero.atc-quality-v95{
+ background-image:linear-gradient(90deg,rgba(3,20,28,.88) 0%,rgba(3,20,28,.62) 40%,rgba(3,20,28,.06) 100%),url('assets/quality-control-approved.jpg')!important;
+ background-size:100% 100%,cover!important;
+ background-position:center center,center center!important;
+ background-repeat:no-repeat!important;
+ background-color:#102630!important;
+ min-height:290px!important;
+}
+@media(max-width:767px){
+ .atc-mission-image{height:auto!important;aspect-ratio:8/3!important}
+ .atc-mission-image img{height:100%!important;width:100%!important}
+ .page-hero.v4-banner.quality-hero.atc-quality-v95{min-height:330px!important;background-position:center center,57% center!important}
+}
+
+/* V9.10: Preserve the supplied infographic's native 2048:768 (8:3) ratio.
+   A complete edge-to-edge image cannot also have a fixed short hero height
+   without either distortion, cropping, or side margins. */
+.atc-mission-image{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:8 / 3!important;
+  overflow:hidden!important;
+  background:#eaf6f8!important;
+}
+.atc-mission-image img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:none!important;
+  aspect-ratio:8 / 3!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  margin:0!important;
+}
+@media(max-width:767px){
+  .atc-mission-image{height:auto!important;aspect-ratio:8 / 3!important}
+  .atc-mission-image img{width:100%!important;height:auto!important;aspect-ratio:8 / 3!important}
+}

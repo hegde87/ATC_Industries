@@ -26,13 +26,13 @@
 .atc-carousel-caption{font-size:12px;color:#647b84;margin-top:12px}
 /* faded factory photography, content remains legible */
 .v4-contact-intro.atc-contact-factory{position:relative;isolation:isolate;background:transparent!important;padding:110px 0!important}
-.v4-contact-intro.atc-contact-factory:before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/ATC-Solar-Powered Office Building.png') center 53%/cover no-repeat;filter:grayscale(22%)}
+.v4-contact-intro.atc-contact-factory:before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/ATC-Solar-Powered Office Building.webp') center 53%/cover no-repeat;filter:grayscale(22%)}
 .v4-contact-intro.atc-contact-factory:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,28,35,.92),rgba(6,28,35,.76) 52%,rgba(6,28,35,.68))}
 .v4-contact-intro.atc-contact-factory h2,.v4-contact-intro.atc-contact-factory h3,.v4-contact-intro.atc-contact-factory p,.v4-contact-intro.atc-contact-factory a,.v4-contact-intro.atc-contact-factory .pill{color:#fff!important;text-shadow:0 1px 3px #0007}
 .v4-contact-intro.atc-contact-factory a{text-decoration:underline;text-underline-offset:4px}
 .v4-contact-intro.atc-contact-factory .v4-contact-columns{gap:22px}
 /* quality visual */
-.page-hero.quality-hero.atc-quality-inspection{background:linear-gradient(90deg,rgba(7,20,27,.94),rgba(7,20,27,.65) 60%,rgba(7,20,27,.35)),url('assets/Automated CNC Cutting Machine in Bright Studio.png') center/cover no-repeat!important}
+.page-hero.quality-hero.atc-quality-inspection{background:linear-gradient(90deg,rgba(7,20,27,.94),rgba(7,20,27,.65) 60%,rgba(7,20,27,.35)),url('assets/Automated CNC Cutting Machine in Bright Studio.webp') center/cover no-repeat!important}
 .atc-quality-motion{background:#eff5f5}
 .atc-quality-motion-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
 .atc-quality-motion h2{font-size:clamp(30px,3.4vw,48px);line-height:1.15;color:#073e48;margin:20px 0}
@@ -52,11 +52,27 @@
 .leadership-role{font-size:1.2rem;font-weight:750;color:#008a91;margin:0 0 1.4rem}.leadership-copy h3{font-size:clamp(1.3rem,2vw,1.8rem);line-height:1.35;margin:0 0 1rem}.leadership-photo img{display:block;width:100%;height:auto;object-fit:cover;object-position:center top}
 
 /* V8.4: Contact uses factory imagery exclusively; About machine deliberately unrecognisable */
-.page-hero.v4-banner.atc-contact-factory-hero{background:linear-gradient(90deg,rgba(7,23,30,.86),rgba(7,23,30,.48)),url('assets/ATC-Solar-Powered Office Building.png') center 48%/cover no-repeat!important}
+.page-hero.v4-banner.atc-contact-factory-hero{background:linear-gradient(90deg,rgba(7,23,30,.86),rgba(7,23,30,.48)),url('assets/ATC-Solar-Powered Office Building.webp') center 48%/cover no-repeat!important}
 .page-hero.v4-banner.atc-about-blurred-hero{background:linear-gradient(90deg,rgba(7,23,30,.90),rgba(7,23,30,.65)),url('assets/atc-extrusion-blurred.jpg') center/cover no-repeat!important}
-.v4-contact-intro.atc-contact-factory:before{background-image:url('assets/ATC-Solar-Powered Office Building.png')!important}
+.v4-contact-intro.atc-contact-factory:before{background-image:url('assets/ATC-Solar-Powered Office Building.webp')!important}
 
 /* Leadership: partner portrait */
 .leadership-partner-section{background:#f5f9f9}
 .leadership-partner-layout .leadership-photo img{aspect-ratio:1/1;object-fit:cover;object-position:center 20%}
 @media(min-width:821px){.leadership-partner-layout .leadership-photo{grid-column:2;grid-row:1}.leadership-partner-layout .leadership-copy{grid-column:1;grid-row:1}}
+
+/* V8.7 leadership team */
+.atc-team-section,.atc-team-home{background:#f6f9f9}
+.atc-team-intro{text-align:center;max-width:780px;margin:0 auto 28px}
+.atc-team-intro h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin:14px 0}
+.atc-team-intro p,.atc-team-home-grid p{color:#526a71;font-size:1.05rem}
+.atc-team-figure{margin:0 auto;max-width:1120px}
+.atc-team-figure img,.atc-team-home-grid img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 14px 38px rgba(5,31,40,.13)}
+.atc-team-figure figcaption{text-align:center;margin-top:12px;color:#48606a;font-weight:700}
+.atc-team-names{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin:16px auto 0;font-size:.93rem;color:#284651}
+.atc-team-names span:not(:last-child)::after{content:"·";margin-left:18px;color:#68b5b1}
+.atc-team-home-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);align-items:center;gap:clamp(24px,5vw,72px)}
+.atc-team-home-grid h2{font-size:clamp(2rem,3.5vw,3.25rem);line-height:1.15;margin:14px 0}
+.atc-team-home-grid p{max-width:520px;margin-bottom:25px}
+@media(max-width:800px){.atc-team-home-grid{grid-template-columns:1fr}.atc-team-names{gap:6px 12px}.atc-team-names span:not(:last-child)::after{margin-left:12px}}
+@media(max-width:480px){.atc-team-names{font-size:.8rem}.atc-team-figure img{border-radius:8px}}

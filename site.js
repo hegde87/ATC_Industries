@@ -17,3 +17,21 @@ document.addEventListener('DOMContentLoaded',()=>{
  rfq.addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id)?.value||'';const subject='ATC Industries RFQ - '+v('company');const body='Name: '+v('name')+'\nCompany: '+v('company')+'\nEmail: '+v('email')+'\nPhone: '+v('phone')+'\nInterest: '+v('interest')+'\nEstimated annual quantity: '+v('quantity')+'\n\nRequirements:\n'+v('message');location.href='mailto:atcgoa@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)})}
 });
 document.addEventListener('DOMContentLoaded',()=>{const form=document.getElementById('partnerForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();const val=id=>document.getElementById(id).value;const subject='ATC Industries - Business Partner Enquiry - '+val('partnerCompany');const body='Company: '+val('partnerCompany')+'\nContact: '+val('partnerName')+'\nEmail: '+val('partnerEmail')+'\nPhone: '+val('partnerPhone')+'\nRegion: '+val('partnerLocation')+'\nInterest: '+val('partnerType')+'\n\nDetails:\n'+val('partnerDetails');window.location.href='mailto:atcgoa@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)})});
+
+// ATC V8.8 mobile navigation: keyboard accessible disclosures and Escape-to-close.
+document.addEventListener('DOMContentLoaded',()=>{
+  const menu=document.getElementById('menu'),nav=document.getElementById('links');
+  if(!menu||!nav)return;
+  const close=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');document.body.classList.remove('mobile-nav-open');};
+  menu.setAttribute('aria-label','Open navigation menu');
+  menu.addEventListener('click',()=>{const opened=nav.classList.contains('open');document.body.classList.toggle('mobile-nav-open',opened);menu.setAttribute('aria-label',opened?'Close navigation menu':'Open navigation menu');});
+  nav.querySelectorAll('.mobile-sub-toggle').forEach(btn=>btn.addEventListener('click',()=>{
+    const expanded=btn.getAttribute('aria-expanded')==='true';
+    btn.setAttribute('aria-expanded',String(!expanded));
+    btn.closest('.nav-group').classList.toggle('mobile-expanded',!expanded);
+  }));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){close();menu.focus();}});
+  document.addEventListener('click',e=>{if(innerWidth<=900&&nav.classList.contains('open')&&!nav.contains(e.target)&&!menu.contains(e.target))close();});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('mobile-nav-open');}));
+  window.addEventListener('resize',()=>{if(innerWidth>900)close();});
+});
